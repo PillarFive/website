@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creating an HTML template using VS Code snippets"
+    />
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/design-system.css" />
+    <title>HTML template</title>
+  </head>
+  <body class="body">
+    <header>
+      <h1>Creating an HTML page from a template</h1>
+    </header>
+    <main class="main">
+      <p>
+        We want to write a snippet in VS Code so that we can create HTML pages
+        from our template.
+      </p>
+      <h2>How to create the snippet</h2>
+      <ol>
+        <li>Go to "Code > Settings"</li>
+        <li>Select "Configure Snippets"</li>
+        <li>Select "HTML"</li>
+        <li>
+          Convert the existing HTML template into a VS Code snippet using
+          <a href="https://snippet-generator.app/">snippet generator</a>
+        </li>
+        <li>Check the prefixes, description and variables are correct</li>
+        <li>
+          Update your user preferences:
+          <code> "editor.tabCompletion": "on"</code>
+        </li>
+        <li>
+          NB To edit an existing snippet repeat the above and select "Existing
+          Snippets"
+        </li>
+      </ol>
+
+      <h2>How to use the snippet</h2>
+      <ol>
+        <li>Create a new HTML page</li>
+        <li>
+          Start typing one of the new template prefixes e.g. p-5 and select a
+          snippet e.g. "Pillar 5 HTML Page"
+        </li>
+        <li>
+          Replace the variables, meta description, title and page header, with
+          values
+        </li>
+      </ol>
+
+      <h3>Tip</h3>
+      <p>To access your "User preferences"</p>
+      <ul>
+        <li>Mac: ⌘ Shift + P</li>
+        <li>Windows: Control/Ctrl Shift + P</li>
+      </ul>
+      <div>
+        Type: "User Settings", short for "Preferences: Open User Settings
+        (JSON)"
+      </div>
+    </main>
+    <h2>References</h2>
+    <dl>
+      <dt>
+        <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets"
+          >Snippets in Visual Studio Code</a
+        >
+      </dt>
+      <dd>
+        Code snippets are templates that make it easier to enter repeating code
+        patterns, such as loops or conditional-statements. Microsoft VS Code.
+      </dd>
+      <dt>
+        <a href="https://snippet-generator.app/">snippet generator</a>
+      </dt>
+      <dd>
+        Online snippet generator for VS Code, Sublime Text and Atom by Pawel
+        Grzybek.
+      </dd>
+      <dt>
+        <a
+          href="https://www.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/"
+          >Visual Studio Code Snippets – the Definitive VS Code Snippet Guide
+          for Beginners</a
+        >
+      </dt>
+      <dd>An introduction from Rob O'Leary at freecodecamp.</dd>
+    </dl>
+    <footer>
+      <nav>
+        <a href="/src/sitemap.html">Link to human-readable sitemap in nav</a>
+      </nav>
+    </footer>
+  </body>
+</html>

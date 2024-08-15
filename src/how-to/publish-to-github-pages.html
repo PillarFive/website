@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="How to publish a website using GitHub Pages"
+    />
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/design-system.css" />
+    <title>Publish using GitHub Pages</title>
+  </head>
+  <body class="body">
+    <header>
+      <h1>Publish using GitHub Pages</h1>
+    </header>
+    <main class="main">
+      <ol>
+        <li>
+          Add the developer dependency
+          <a href="https://github.com/tschaub/gh-pages">gh-pages</a>
+        </li>
+        <li>
+          Create a new script in package.json
+          <code>"publish": "gh-pages -d dist"</code>
+        </li>
+        <li>
+          Update the public url to match the GitHub repository name
+          <code>--public-url /website</code> in the npm build script
+        </li>
+        <li>Stop site running locally</li>
+        <li>Delete dist and .parcel-cache</li>
+        <li><code>npm push main</code></li>
+        <li><code>npm run build</code></li>
+        <li><code>npm run publish</code></li>
+      </ol>
+      <p>
+        This is a temporary workaround till the site is published to a custom
+        domain.
+      </p>
+    </main>
+    <footer>
+      <nav>
+        <a href="/src/sitemap.html">Link to human-readable sitemap in nav</a>
+      </nav>
+    </footer>
+  </body>
+</html>

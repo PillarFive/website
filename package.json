@@ -7,9 +7,11 @@
     "eslint": "npx eslint",
     "csslint": "npx stylelint src/**/*.css --fix",
     "test": "node tests/index.test.js",
-    "start": "parcel",
-    "build": "parcel build --dist-dir dist",
-    "ibm": "npx achecker ./src"
+    "static": "cp src/robots.txt dist",
+    "start": "parcel && npm run static",
+    "build": "parcel build --dist-dir dist --public-url /website && npm run static",
+    "ibm": "npx achecker ./src",
+    "publish": "gh-pages -d dist"
   },
   "source": [
     "./src/index.html",
@@ -29,6 +31,7 @@
     "@eslint/js": "^9.8.0",
     "accessibility-checker": "^3.1.74",
     "eslint": "^9.8.0",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "parcel": "^2.12.0",
     "prettier": "^3.3.3",

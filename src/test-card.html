@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/design-system.css" />
-    <link rel="stylesheet" href="./styles/test-card.css" />
+    <meta
+      name="description"
+      content="Test card - cheat sheet for how HTML elements look on the site"
+    />
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/design-system.css" />
+    <link rel="stylesheet" href="/src/styles/test-card.css" />
     <title>Test Card</title>
   </head>
   <body class="body">
@@ -63,7 +67,7 @@
         <dt>dt 2 in dl</dt>
         <dd>dd 2 in dl</dd>
       </dl>
-      <form action="./test-card-submit.html">
+      <form action="/src/test-card-submit.html">
         <fieldset>
           <legend>legend</legend>
           <label for="input-text">Label for the text input</label>
@@ -84,6 +88,7 @@
           src="https://solar.lowtechmagazine.com/2023/11/plastic-waste-in-the-fuel-tank/images/dithers/intro-plastic-waste-in-fuel-tank-gijs-schalkx_dithered.png"
           alt="Image: This car drives on plastic. Image credit: Gijs Schalkx."
           decoding="async"
+          loading="lazy"
         />
         <figcaption>
           figcaption:
@@ -177,7 +182,7 @@
     </main>
     <footer>
       <nav>
-        <a href="./sitemap.html">Link to human-readable sitemap in nav</a>
+        <a href="/src/sitemap.html">Link to human-readable sitemap in nav</a>
       </nav>
     </footer>
   </body>

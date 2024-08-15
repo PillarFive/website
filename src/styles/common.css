@@ -14,16 +14,16 @@
   box-sizing: border-box;
 }
 
-*:empty:not(input, img) {
+*:empty:not(input, img, hr) {
   display: none;
 }
 
-:is(p) {
+:is(p, li, hr) {
   margin: calc(var(--d) * 2) 0;
 }
 
-:is(*):not(h1, h2, h3, h4, h5, h6, code) {
-  font-size: 1.2rem;
+:is(*):not(h1, h2, h3, h4, h5, h6) {
+  font-size: 1.1rem;
 }
 
 :is(button, input, aside, fieldset, figure) {
@@ -56,7 +56,7 @@
   text-decoration: none;
 }
 
-:is(main, dd, li, th, td) {
+:is(dd, th, td, dt) {
   padding: var(--d);
   text-align: left;
 }
@@ -87,6 +87,14 @@ aside {
 
 body {
   -webkit-font-smoothing: antialiased;
+  color: var(--fg-colour);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+dl *,
+code {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 img {
@@ -98,7 +106,7 @@ nav {
   margin: calc(var(--d) * 8) 0;
 }
 
-p {
-  color: var(--fg-colour);
-  line-height: 1.8;
+p,
+li {
+  line-height: 1.7;
 }
